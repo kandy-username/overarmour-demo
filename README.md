@@ -1,2 +1,2 @@
-# overarmour-demo-repo-name
-Demo application for the Kandy Workshop
+# We're almost there !
+Our team is currently working on the finishing touches of our demo application.  The code should be here shortly.
