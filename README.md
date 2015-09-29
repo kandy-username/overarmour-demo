@@ -1,3 +1,7 @@
-# We're almost there !
-Our team is currently working on the finishing touches of our demo application.  The code should be here shortly.
-If you made it this far, you've done all of your homeworks and we can pick it up from here on the first day of the workshop.
+Over Armour
+
+A sample e-commerce site for Kandy training.
+
+
+To check it out:
+run node server ==> node server.js --port port_number -b base_name

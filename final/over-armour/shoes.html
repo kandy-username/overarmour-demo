@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Over Armour</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/carousel/experts-bio.css" />
+    <link rel="stylesheet" href="css/carousel/main-right-slider.css" />
+</head>
+<body>
+<div class="main-container">
+    <nav id="navigation" class="main-container">
+        <div id='top_static_drawer' class='top-static-drawer'></div>
+        <div class="row header-title">
+            <div class="column">
+                <div id="header-actions">
+                    <span class="header-buttons top-header-spacing">Stores</span>
+                    <img src='/img/glyphicons/glyphicons-358-suitcase.png'/>&nbsp;<span class="header-buttons top-header-spacing">US</span>
+                    <img src='/img/glyphicons/glyphicons-203-shopping-cart.png'/>&nbsp;<span class="header-buttons top-header-spacing">Cart</span>
+                    <span class="header-buttons">Logout</span>
+                </div>
+                <img class='logo' src="img/general/logo.png" />
+            </div>
+        </div>
+
+        <div class="row main-tabs">
+            <div class="column">
+                <ul class="unstyled inline main-nav">
+                    <li>Women</li>
+                    <li>Men</li>
+                    <li>Kids</li>
+                    <li class="shoe-tab-selected">Shoes</li>
+                    <li>Accessories</li>
+                    <li id="search"><input type="text" /></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav><!-- end navigation -->
+
+
+    <div id="content" class="main-container">
+
+        <!-- agent box and slider -->
+        <div class="row two-column detail-container large-container cart-hint middle-container fill-page-height">
+            <!-- Talk to an expert container -->
+            <div class="column fill-parent talk-expert-main">
+                <div class="row one-column expert-label-container">
+                    <div class="column title-label">
+                        <p><a id="launch_expert_popup">Talk to one of our experts &nbsp;> </a></p>
+                    </div>
+                </div>
+                <div class="row three-column no-top-spacer">
+                    <ul class='shoe-list-option h-s-l'>
+                        <li><span class='option-heading'>Running and Training</span>
+                            <ul class='shoe-list-sub-options'>
+                                <li><hr/>Footware</li>
+                                <li>
+                                    <ul class='first'>
+                                        <li><hr/>Running and Training</li>
+                                        <li><hr/>Cleats</li>
+                                        <li><hr/>Boots</li>
+                                        <li><hr/>Hiking and Trail</li>
+                                        <li><hr/>Slides and Sandles<hr/></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a id='color_slider' class="p-m-sign">-</a>
+                                    <span>Color</span>
+                                    <div id='color_list'>
+                                        <table cellpadding="10" cellspacing="10">
+                                            <tr>
+                                                 <td class="bg-black"></td>
+                                                 <td class="bg-grey"></td>
+                                                 <td class="bg-green"></td>
+                                            </tr>
+                                            <tr>
+                                                 <td class="bg-blue"></td>
+                                                 <td class="bg-coral"></td>
+                                                 <td class="bg-white"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li><hr class='dotted'/><a class="p-m-sign">+</a>Size</li>
+                                <li><hr class='dotted'/><a class="p-m-sign">+</a>Price</li>
+                                <li><hr class='dotted'/><a class="p-m-sign">+</a>Sport<hr class= 'dotted'/></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- right sliders -->
+            <div class="shoes column fill-parent right-carousel-container">
+               <!-- Jssor Slider Begin -->
+                <div id="right_sliders_container"  style="width: 980px; height: 380px;" class="right-sliders-container">
+                        <!-- Loading Screen -->
+                        <div class="right-carousel-loading" u="loading">
+                            <div></div>
+                        </div>
+
+                        <!-- Slides Container -->
+                        <div class="right-carousel-slides" u="slides" style="width: 1140px; height: 442px;">
+                            <div>
+                                <img u="image" src="img/general/large_carousel/iStock_000002615216Large_crop.jpg" />
+                            </div>
+                            <div>
+                                <img u="image" src="img/general/large_carousel/iStock_000043058210Large_Crop.jpg" />
+                            </div>
+                        </div>
+
+                        <!-- Arrow Left -->
+                        <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;">
+                        </span>
+                        <!-- Arrow Right -->
+                        <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;">
+                        </span>
+                        <!--#endregion Arrow Navigator Skin End -->
+                </div>
+
+                <div id='item_list_container'></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- === DO NOT TOUCH === -->
+    <!-- JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- JSSO Library for carousel -->
+    <script type="text/javascript" src="js/lib/jssor/jssor.slider.mini.js"></script>
+
+    <!-- Custom scripts: Order matters -->
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/model.js"></script>
+    <!-- main right carousel -->
+    <script type="text/javascript" src="js/carousel/main-right-slider.js"></script>
+<!-- === DO NOT TOUCH (END)=== -->
+
+<!-- === KANDY === -->
+    <!-- DEPENDENCIES -->
+    <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/fcs/3.0.4/fcs.js"></script>
+    <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.2.2/kandy.js" ></script>
+    <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/cobrowse/1.0.1/kandy.cobrowse.min.js"></script>
+
+    <!-- KANDY UTIL SCRIPTS -->
+    <script src="/js/kandy-api/config.js"></script>
+    <script src="/js/ui-facades.js"></script>
+
+    <!-- KANDY API FEATURES -->
+     <script src="/js/kandy-api/co-browsing.js"></script>
+
+    <!-- persistence -->
+     <script src="/js/kandy-api/persist/domain-logic.js"></script>
+<!-- === KANDY (END)=== -->
+<script>
+$(document).ready(function ()  {
+    /**
+    * UI MANIPULATION
+    **/
+    $("#item_list_container").html(display_items(items));
+    slide_down_slow($("#color_list"));
+    $("#color_slider").click(function(){ ui_facade.shoes.color_slider(); });
+    $(".logo").click(function(){home();});
+
+    //persist sso (if any)
+    persist_shoes_sso();
+});
+</script>
+</body>
+</html>

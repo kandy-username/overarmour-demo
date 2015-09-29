@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2" id="activity-container">
+      <div id="app-details">
+        <h1 class="h2">
+          Quick Start Kandy Demo App: CoBrowsing Agent
+        </h1>
+        <p>
+          This sample application demonstrates the code for CoBrowsing Agent with Kandy.
+        </p>
+      </div>
+      
+      <hr />
+      <div class="clearfix">
+        <p class="h4 pull-left">
+          <strong>Hello <span class="username"></span></strong>
+        </p>
+      </div>
+      <hr />
+      <div id="session-container">
+        <h3>
+          Session Loading & Selection:
+        </h3>
+        <hr />
+        <button class="btn btn-success" id="open-sessions">Get Open Sessions</button>
+        <hr />
+        <div class="hidden" id="session-results">
+          <div id="session-form">
+            <div class="form-group">
+              <label for="sessions-select">Select Session</label>
+              <select name="sessions-select" id="sessions-select" class="form-control"></select>
+              
+            </div>
+            <hr />
+          </div>
+          <ul class="hidden" id="session-details">
+            <li>
+              Type: <span id="session-type"></span>
+            </li>
+            <li>
+              Status: <span id="session-status"></span>
+            </li>
+            <li>
+              Admin: <span id="session-admin"></span>
+            </li>
+            <hr />
+          </ul>
+          <div id="session-actions">
+            <div class="btn-toolbar">
+              <button class="btn btn-success hidden" id="session-join-btn">Join Session</button><button class="btn btn-danger btn hidden" id="session-leave-btn">Leave Session</button><button class="btn btn-success hidden" id="start-cobrowsing-btn">Start CoBrowsing Viewer</button>
+		<button class="btn btn-warning hidden" id="stop-cobrowsing-btn">Stop CoBrowsing Viewer</button>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div id="cobrowsing-holder" style="width:100%"></div>
+      </div>
+    </div>
+  </div>
+</div>

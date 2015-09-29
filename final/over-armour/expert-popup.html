@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Connect</title>
+  <link rel="stylesheet" href="css/fonts/fonts.css" />
+  <link rel="stylesheet" href="css/pages/expert-popup.css" />
+</head>
+<body class="expert-popup">
+  <div class='wrapper'>
+    <!-- HEADER -->
+    <div class='header'>
+      <!-- Chat Template -->
+      <div class='chat-template'>
+        
+        <button id='launch_video' class='align-header bg-black-f'>
+          <i class="icon icon-video white-on-black"></i><br><span>video</span>
+        </button>
+        <img id="expert_pic" class='align-header expert-pic'/>
+        <button id='launch_audio' class='align-header bg-black-f'>
+          <i class="icon icon-telephone white-on-black"></i><br><span>audio</span>
+        </button>
+        <div id="expert_name" class="chat-expert-name"></div>
+      </div>
+      <!-- Video template -->
+      <div class='video-template'>
+        <div class="video-expert-name"><span class='top agent_chat_nick'></span></div>
+        <div id="theirVideo" class="their-video"></div>
+        <ul class='bottom button-list-config'>
+          <li class='figures' id="mute_call"><i class="icon icon-mic-no"></i><span>mute</span></li>
+          <li class='figures hidden' id="end_call"><i class="icon icon-telephone end-call"></i><span>end call</span></li>
+          <li class='figures white' id="launch_cobrowsing_parent"><i class="icon icon-computer-network-streamline"></i><span>screen Share</span></li>
+          <li class='figures white hidden' id="request_video_in_call"><i class="icon icon-video"></i><span>Request video</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CHAT WINDOW -->
+    <div id="chat_window" class="chat-window">
+      <!-- MOCK CHAT DISPLAY -->
+        <!--agent message -->
+        <label class="agent_chat_nick"></label>
+        <div class='bubble-agent bubble-left-margin'>
+          Welcome back. How can I help you today?
+        </div>
+        <!-- Client message -->
+        <div class='bubble-client bubble-right-margin'>
+         I’m looking for running shoes for training.
+        </div>
+
+        <!--agent message -->
+        <label class="agent_chat_nick"></label>
+        <div class='bubble-agent bubble-left-margin'>
+          Ok, I can help you with that. These are what I use. I love them.
+        </div>
+        <!--agent message -->
+        <label class="agent_chat_nick"></label>
+        <div class='bubble-agent bubble-left-margin'>
+          <!-- If you want to be able to open shoes.html on page click, make sure co-browsing is active though -->
+            <a href='javascript:open_a_parent_tab("/shoes.html")'><img src="/img/general/Nike-Shoe-Black.jpg"/></a>
+          <!--<img src="/img/general/Nike-Shoe-Black.jpg"/>-->
+        </div>
+    </div>
+
+    <!-- INPUT MESSAGE -->
+    <div class='msg-area'>
+      <textarea id="chat_input_window" placeholder="enter chat message here"></textarea>
+      <div class="send-im"><button type="button" id="send_chat_msg_button">Send</button></div>
+    </div>
+  </div>
+
+<!-- === DO NOT TOUCH === -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!-- order matters -->
+  <script type="text/javascript" src="js/util.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script src="js/kandy-api/config.js"></script>
+<!-- === DO NOT TOUCH (END)=== -->
+
+<!-- === KANDY === -->
+  <!-- DEPENDENCIES -->
+  <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/fcs/3.0.4/fcs.js"></script>
+  <script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.2.2/kandy.js" ></script>
+
+  <!-- === KANDY (END)=== -->
+
+<!-- === CUSTOM POPUP COMMANDS === -->
+  <script src="js/lib/mac_promise.js"></script>
+  <script src="js/experts.js"></script>
+  <script src="js/expert.js"></script>
+  <script src="js/kandyWrapper.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/popupViewModel.js"></script>
+<!-- === CUSTOM POPUP COMMANS (END)=== -->
+
+
+</body>
+</html>

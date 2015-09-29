@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Over Armour</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/carousel/experts-bio.css" />
+    <link rel="stylesheet" href="css/carousel/main-right-slider.css" />
+    <link rel="stylesheet" href="css/fonts/fonts.css" />
+</head>
+<body>
+<div class="main-container">
+    <nav id="navigation" class="main-container">
+        <div id='top_static_drawer' class='top-static-drawer'>
+            <span id="cobrowsing-bar" style="display: none">
+                <i class="icon icon-computer-network-streamline"></i>
+                &nbsp;&nbsp;You are screen sharing with <span id="cobrowsing-expert">Lisa</span>
+                &nbsp;<i>(session id: <span id="cobrowsing-session"></span>)</i>
+            </span>
+        </div>
+        <div class="row header-title">
+            <div class="column">
+                <div id="header-actions">
+                    <span class="header-buttons top-header-spacing">Stores</span>
+                    <img src='img/glyphicons/glyphicons-358-suitcase.png'/>&nbsp;<span class="header-buttons top-header-spacing">US</span>
+                    <img src='img/glyphicons/glyphicons-203-shopping-cart.png'/>&nbsp;<span class="header-buttons top-header-spacing">Cart</span>
+                    <span class="header-buttons">Logout</span>
+                </div>
+                <img class='logo' src="img/general/logo.png" />
+            </div>
+        </div>
+
+        <div class="row main-tabs">
+            <div class="column">
+                <ul class="unstyled inline main-nav">
+                    <li>Women</li>
+                    <li>Men</li>
+                    <li>Kids</li>
+                    <li><a id="load_shoes">Shoes</a></li>
+                    <li>Accessories</li>
+                    <li id="search"><input type="text" /></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav><!-- end navigation -->
+
+
+    <div id="content" class="main-container">
+
+        <!-- agent box and slider -->
+        <div id="middle_home_content" class="row two-column detail-container large-container cart-hint middle-container">
+            <!-- Talk to an expert container -->
+            <div class="column fill-parent talk-expert-main">
+                <!-- === BASIC WITHOUT EXPERT PANEL STARTS HERE === -->
+                    <div class="row one-column expert-label-container">
+                        <div class="column title-label">
+                            <p><a id="launch_expert_popup">Talk to one of our experts &nbsp;> </a></p>
+                        </div>
+                    </div>
+                    <div class="row three-column no-top-spacer">
+                        <ul class='shoe-list-option h-s-l'>
+                            <li><span class='option-heading'>Running and Training</span>
+                                <ul class='shoe-list-sub-options'>
+                                    <li><hr/>Footware</li>
+                                    <li>
+                                        <ul class='first'>
+                                            <li><hr/>Running and Training</li>
+                                            <li><hr/>Cleats</li>
+                                            <li><hr/>Boots</li>
+                                            <li><hr/>Hiking and Trail</li>
+                                            <li><hr/>Slides and Sandles<hr/></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- === BASIC WITHOUT EXPERT PANEL ENDS HERE === -->
+
+                <!-- === EXPERT PANEL STARTS HERE ===-->
+                    <!--<div class="row one-column expert-label-container">-->
+                        <!--<div class="column no-padding title-label">-->
+                            <!--<p>Talk to one of our experts</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="row one-column no-top-spacer expert-bio-slider-container" id="expert_slider">-->
+                            <!--&lt;!&ndash; The individual expert panels will be injected here &ndash;&gt;-->
+                    <!--</div>-->
+
+                    <!--<div id="expert_info_container" class="row one-column no-top-spacer"></div>-->
+
+
+                    <!--<div class="row one-column no-top-spacer connection-method">-->
+                        <!--<span class="left-float">Connect via:</span><span class="hint right-float"><i>What is this?</i></span>-->
+                    <!--</div>-->
+                    <!--<div class="row three-column no-top-spacer connection-button-list center-text">-->
+                        <!--<div class="column">-->
+                            <!--<div id="launch_video_support" name='video' class="fill-parent video-support pointer">-->
+                                <!--<i class="icon icon-video white-on-black"></i><br><span class="header-buttons">video</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="column">-->
+                            <!--<div id="launch_audio_support"  name='audio' class="fill-parent audio-support pointer">-->
+                               <!--<i class="icon icon-telephone white-on-black"></i><br><span class="header-buttons">audio</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="column">-->
+                            <!--<div id="launch_chat_support"  name='chat' class="fill-parent chat-support pointer">-->
+                                <!--<i class="icon icon-comment white-on-black"></i><br><span class="header-buttons">text</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!-- === EXPERT PANEL ENDS HERE ===-->
+            </div>
+
+            <!-- RIGHT CAROUSEL SLIDERS -->
+            <div class="home column fill-parent right-carousel-container">
+                <!-- Jssor Slider Begin -->
+                <div id="right_sliders_container"  style="width: 980px; height: 380px;" class="right-sliders-container">
+                        <!-- Loading Screen -->
+                        <div class="right-carousel-loading" u="loading">
+                            <div></div>
+                        </div>
+
+                        <!-- Slides Container -->
+                        <div class="right-carousel-slides" u="slides" style="width: 1140px; height: 442px;">
+                            <div>
+                                <img u="image" src="img/general/large_carousel/iStock_000002615216Large_crop.jpg" />
+                            </div>
+                            <div>
+                                <img u="image" src="img/general/large_carousel/iStock_000043058210Large_Crop.jpg" />
+                            </div>
+                        </div>
+                        
+                        <!--#region Arrow Navigator Skin Begin -->
+                        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+                        <!-- Arrow Left -->
+                        <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;">
+                        </span>
+                        <!-- Arrow Right -->
+                        <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;">
+                        </span>
+                        <!--#endregion Arrow Navigator Skin End -->
+                </div>
+                <!-- Jssor Slider End -->
+            </div>
+        </div>
+
+        <!-- bottom pictures -->
+        <div class="row three-column detail-container bottom-pictures">
+            <div class="column bottom-images">
+                <img src="img/general/iStock_000043058210Large.jpg"/>
+            </div>
+            <div class="column bottom-images">
+                <img src="img/general/iStock_000042194182Large.jpg"/>
+            </div>
+            <div class="column bottom-images">
+                <img src="img/general/iStock_000014437531Large.jpg"/>
+            </div>
+        </div>
+    </div>
+    <!-- co-browsing session id hidden field -->
+    <input type="hidden" id="sessions-select"/>
+
+</div>
+
+<!-- === DO NOT TOUCH === -->
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- JSSOR library -->
+    <script type="text/javascript" src="js/lib/jssor/jssor.slider.mini.js"></script>
+    <!-- Order matters -->
+    <script src="/js/lib/mac_promise.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/model.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+<!-- === DO NOT TOUCH (END)=== -->
+
+<!-- === CAROUSELS === -->
+    <script type="text/javascript" src="js/carousel/main-right-slider.js"></script>
+<!-- === CAROUSELS (END) === -->
+
+<!-- === KANDY === -->
+    <!-- DEPENDENCIES -->
+    <!--<script src="https://kandy-portal.s3.amazonaws.com/public/javascript/fcs/3.0.4/fcs.js"></script>-->
+    <!--<script src="https://kandy-portal.s3.amazonaws.com/public/javascript/kandy/2.3.0/kandy.js" ></script>-->
+    <!--<script src="https://kandy-portal.s3.amazonaws.com/public/javascript/cobrowse/1.0.1/kandy.cobrowse.min.js"></script>-->
+
+    <!--GENERAL SCRIPTS -->
+    <script src="js/app.js"></script>
+    <script src="js/expert.js"></script>
+    <script src="js/experts.js"></script>
+    <script src="js/viewModel.js"></script>
+    <!--<script src="js/kandyWrapper.js"></script>-->
+
+    <!-- KANDY UTIL SCRIPTS -->
+    <script src="js/kandy-api/config.js"></script>
+
+<!-- === KANDY (END)=== -->
+</body>
+</html>

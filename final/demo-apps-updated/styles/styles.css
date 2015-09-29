@@ -1,0 +1,18 @@
+#incoming-video {
+  background: url('/assets/quick_starts/video_placeholder.png') no-repeat center;
+  background-color: #000;
+  background-size: contain;
+  height: 300px;
+}
+
+#activity-container {
+  background: #f9f9f9;
+  border: 2px solid #eee;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+iframe {
+	width: 100% !important;
+	height: 500px;
+}
